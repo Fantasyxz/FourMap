@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">M4P</string>
+    <string name="NamaSekolah">Nama Sekolah </string>
+    <string name="detail">Alamat</string>
+    <string name="list">List</string>
+    <string name="grid">Grid</string>
+    <string name="about">About</string>
+    <string name="stock">bamaqyan@gmail.com</string>
+</resources>
