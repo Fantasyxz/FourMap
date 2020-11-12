@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "833813448824",
+    "firebase_url": "https://android-f28a3.firebaseio.com",
+    "project_id": "android-f28a3",
+    "storage_bucket": "android-f28a3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:833813448824:android:2d94f53294151868f5058d",
+        "android_client_info": {
+          "package_name": "com.firebase.smartschool"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "833813448824-6hd39dnjiun4460vkk1h660vrsprumrt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.firebase.smartschool",
+            "certificate_hash": "72107d59737f122fab1f40016ad2932f2914e081"
+          }
+        },
+        {
+          "client_id": "833813448824-n94s9ne76tbsn363a0iofaodej1g45ac.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwpV2Rib9f4vMPKRwpgc8RWl61Y33Ah-Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "833813448824-n94s9ne76tbsn363a0iofaodej1g45ac.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
