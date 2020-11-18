@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>FourMap - Data</title>
+
+		<!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> 
+	</head>
+	<body>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-4 bg-primary">
+					<img src="#" alt="img-map">
+				</div>
+				<div class="col-8">
+					<div class="row">
+						<label for="ruangan">Ruangan</label>
+					</div>
+					<div class="row">
+						<p>A21</p>
+					</div>
+					<div class="row">
+						<label for="ruangan">Kelas</label>
+					</div>
+					<div class="row">
+						<p>-</p>
+					</div>
+					<div class="row">
+						<label for="ruangan">Mata Pelajaran</label>
+					</div>
+					<div class="row">
+						<p>-</p>
+					</div>
+					<div class="row">
+						<label for="ruangan">Status</label>
+					</div>
+					<div class="row">
+						<p>-</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+		<!-- Firebase SDK Js -->
+		<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-database.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-analytics.js"></script>
+
+		<script>
+			var firebaseConfig = {
+				apiKey: "AIzaSyDA4ISkZchgBXetGpD6YbpGNUa7LhUP16w",
+				authDomain: "smartschool-7d50c.firebaseapp.com",
+				databaseURL: "https://smartschool-7d50c.firebaseio.com",
+				projectId: "smartschool-7d50c",
+				storageBucket: "smartschool-7d50c.appspot.com",
+				messagingSenderId: "619429070631",
+				appId: "1:619429070631:web:5562404d166e323f430b02",
+				measurementId: "G-JZYNBWDGCV"
+			};
+			// Initialize Firebase
+			firebase.initializeApp(firebaseConfig);
+			firebase.analytics();
+			
+			// Get a reference to the database service
+			var database = firebase.database();
+		</script>
+	</body>
+</html>
