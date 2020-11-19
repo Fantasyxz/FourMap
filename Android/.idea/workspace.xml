@@ -11,10 +11,9 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50546b3c-2009-405c-a289-7b6832eb6a94" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/firebase/smartschool/Change_ProfileActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_abus.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="50546b3c-2009-405c-a289-7b6832eb6a94" name="Default Changelist" comment="Layout About">
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_abus.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_abus.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,12 +157,20 @@
       <option name="project" value="LOCAL" />
       <updated>1605766679914</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Layout About">
+      <created>1605774988845</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605774988845</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Layout Profile" />
-    <option name="LAST_COMMIT_MESSAGE" value="Layout Profile" />
+    <MESSAGE value="Layout About" />
+    <option name="LAST_COMMIT_MESSAGE" value="Layout About" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="27" key="#Notifications" timestamp="1605069531398">
@@ -183,10 +190,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="541" y="182" key="AndroidCreateXmlResourceDialog/0.0.1366.738@0.0.1366.738" timestamp="1605166435905" />
-    <state x="149" y="0" key="CommitChangelistDialog2" timestamp="1605766676010">
+    <state x="149" y="0" key="CommitChangelistDialog2" timestamp="1605775173303">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="149" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1605766676010" />
+    <state x="149" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1605775173303" />
     <state x="463" y="121" key="FileChooserDialogImpl" timestamp="1605713082064">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
