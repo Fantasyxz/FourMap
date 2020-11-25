@@ -170,7 +170,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:background="none"
+                android:background="@color/transparent"
                 android:text="Cancel">
 
             </Button>
@@ -181,7 +181,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="140dp"
                 android:layout_marginRight="20dp"
-                android:background="none"
+                android:background="@color/transparent"
                 android:text="Submit">
 
             </Button>

@@ -22,7 +22,7 @@ public class ScheduleFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         scheduleViewModel =
                 new ViewModelProvider(this).get(ScheduleViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_gallery, container, false);
+        View root = inflater.inflate(R.layout.fragment_schedule, container, false);
         final TextView textView = root.findViewById(R.id.text_gallery);
         scheduleViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override

@@ -14,9 +14,7 @@
         android:layout_height="25dp"
         android:background="@drawable/union_6"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-    </Button>
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <LinearLayout
         android:id="@+id/top"
@@ -32,8 +30,7 @@
             android:layout_height="wrap_content"
             android:background="@mipmap/ic_launcher"
             android:src="@drawable/ic_launcher_foreground"
-            android:layout_gravity="center">
-        </ImageView>
+            android:layout_gravity="center"/>
 
     </LinearLayout>
 
@@ -56,9 +53,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             android:layout_marginTop="12dp"
-            android:layout_marginStart="@dimen/activity_horizontal_margin">
-
-        </ImageView>
+            android:layout_marginStart="@dimen/activity_horizontal_margin"/>
 
         <Button
             android:id="@+id/about"
@@ -68,11 +63,9 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toRightOf="@+id/img_about"
             android:text="@string/about"
+            android:background="@color/transparent"
             android:textAlignment="textStart"
-            android:background="none"
-            android:textColor="@android:color/white">
-
-        </Button>
+            android:textColor="@android:color/white"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -95,9 +88,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             android:layout_marginTop="12dp"
-            android:layout_marginStart="@dimen/activity_horizontal_margin">
-
-        </ImageView>
+            android:layout_marginStart="@dimen/activity_horizontal_margin"/>
 
         <Button
             android:id="@+id/feedback"
@@ -107,11 +98,9 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toRightOf="@+id/img_feedback"
             android:text="@string/feedback"
+            android:background="@color/transparent"
             android:textAlignment="textStart"
-            android:background="none"
-            android:textColor="@android:color/white">
-
-        </Button>
+            android:textColor="@android:color/white"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -134,23 +123,19 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             android:layout_marginTop="12dp"
-            android:layout_marginStart="@dimen/activity_horizontal_margin">
-
-        </ImageView>
+            android:layout_marginStart="@dimen/activity_horizontal_margin"/>
 
         <Button
             android:id="@+id/contact"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
-            android:background="none"
             android:text="@string/contact"
             android:textAlignment="textStart"
             android:textColor="@android:color/white"
+            android:background="@color/transparent"
             app:layout_constraintLeft_toRightOf="@+id/img_contact"
-            app:layout_constraintTop_toTopOf="parent">
-
-        </Button>
+            app:layout_constraintTop_toTopOf="parent"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

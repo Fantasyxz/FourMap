@@ -1,42 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="match_parent">
 
     <RelativeLayout
         android:id="@+id/top"
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:paddingTop="30dp"
-        android:paddingLeft="20dp"
         android:background="@drawable/path_1"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent">
+        android:paddingLeft="20dp"
+        android:paddingTop="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <Button
             android:id="@+id/btnBack"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:background="@drawable/group_22">
-        </Button>
+            android:background="@drawable/group_22"/>
 
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_marginLeft="135dp"
-            android:layout_marginTop="155dp">
-
-        </ImageView>
+            android:layout_marginStart="135dp"
+            android:layout_marginTop="155dp"/>
 
     </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/top"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/top">
 
         <TextView
             android:id="@+id/username"
@@ -46,9 +43,7 @@
             android:textAlignment="center"
             android:textAllCaps="false"
             android:textSize="25dp"
-            android:textStyle="bold">
-
-        </TextView>
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/nis"
@@ -57,97 +52,80 @@
             android:text="1819117620"
             android:textAlignment="center"
             android:textAllCaps="false"
-            android:textSize="15dp">
-
-        </TextView>
+            android:textSize="15dp"/>
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="30dp"
-            android:background="@drawable/rectangle_89">
+            android:background="@drawable/rectangle_89"
+            android:padding="30dp">
 
-        <TextView
-            android:id="@+id/judul_nama"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="15dp"
-            android:text="Nama Lengkap"
-            android:layout_marginTop="30dp"
-            app:layout_constraintTop_toTopOf="">
+            <TextView
+                android:id="@+id/judul_nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Nama Lengkap"
+                android:textSize="15dp"/>
 
-        </TextView>
-
-        <TextView
-            android:id="@+id/nama"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:textColor="@android:color/black"
-            android:text="Krisna Riyadi"
-            app:layout_constraintTop_toBottomOf="@+id/judul_nama">
-
-        </TextView>
+            <TextView
+                android:id="@+id/nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Krisna Riyadi"
+                android:textColor="@android:color/black"
+                android:textSize="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/judul_nama"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="30dp"
-            android:background="@drawable/rectangle_89">
+            android:background="@drawable/rectangle_89"
+            android:padding="30dp">
 
             <TextView
                 android:id="@+id/judul_kelas"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="15dp"
-                android:text="Kelas"
                 android:layout_marginTop="30dp"
-                app:layout_constraintTop_toTopOf="">
-
-            </TextView>
+                android:text="Kelas"
+                android:textSize="15dp"/>
 
             <TextView
                 android:id="@+id/kelas"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20dp"
-                android:textColor="@android:color/black"
                 android:text="XIIRPL2"
-                app:layout_constraintTop_toBottomOf="@+id/judul_kelas">
-
-            </TextView>
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@+id/judul_kelas"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="30dp"
-            android:background="@drawable/rectangle_89">
+            android:background="@drawable/rectangle_89"
+            android:padding="30dp">
 
             <TextView
                 android:id="@+id/judul_telp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="15dp"
-                android:text="No Telepon"
                 android:layout_marginTop="30dp"
-                app:layout_constraintTop_toTopOf="">
-
-            </TextView>
+                android:text="No Telepon"
+                android:textSize="15sp"/>
 
             <TextView
                 android:id="@+id/no_telp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20dp"
-                android:textColor="@android:color/black"
                 android:text="08124536426"
-                app:layout_constraintTop_toBottomOf="@+id/judul_telp">
-
-            </TextView>
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@+id/judul_telp"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -156,11 +134,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Change Profile"
-            android:background="none">
-
-        </Button>
-
+            android:background="@color/transparent"
+            android:text="Change Profile"/>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
