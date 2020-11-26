@@ -4,7 +4,8 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:paddingLeft="40dp"
-    android:paddingTop="40dp">
+    android:paddingTop="40dp"
+    android:paddingRight="40dp">
 
     <Button
         android:id="@+id/btnBack"
@@ -25,6 +26,13 @@
         android:layout_marginTop="40dp"
         app:layout_constraintTop_toBottomOf="@+id/btnBack"
         app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/judul_jadwal"
+        app:layout_constraintLeft_toLeftOf="parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/satu"
@@ -418,5 +426,7 @@
             app:layout_constraintLeft_toLeftOf="parent"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
