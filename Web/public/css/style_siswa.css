@@ -1,0 +1,81 @@
+body {
+    background-color: #f0f0f0;
+}
+
+/* Content CSS */
+.content {
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+.content .search {
+    background-color: #fff;
+    border-radius: 7px;
+    height: 40px;
+}
+
+.content .inputSearch {
+    background-color: transparent;
+    border: none;
+    width: 94%;
+    padding: 10px 20px;
+}
+
+.content .inputSearch:focus {
+    outline: none;
+}
+
+.content .btn-search {
+    margin-bottom: 6px;
+    margin-left: auto;
+}
+
+.content .header {
+    background-color: #7B7FF6;
+    height: 40px;
+    margin: 10px 0;
+    text-align: center;
+    border-radius: 7px;
+}
+
+.content .header h1 {
+    font-weight: 800;
+    font-size: 18px;
+    padding-top: 10px;
+    color: #fff;
+}
+
+.content .content-data {
+    overflow: hidden;
+    max-height: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.content .inner {
+    max-height: 85vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+/* Table CSS */
+
+.table-head {
+    border-radius: 10px;
+}
+
+.table-head th {
+    text-align: center;
+    color: #fff;
+    background-color: #7BD5F5;
+}
+
+.table-head td {
+    /* background-color: #fff; */
+    text-align: center;
+}
+
+@media (max-width:768px){
+    .content .inputSearch {
+        width: 85%;
+    }
+}

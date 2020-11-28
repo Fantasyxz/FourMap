@@ -9,7 +9,12 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> 
 		
 		<!-- CSS -->
-		<link rel="stylesheet" type="text/css" href="css/style_map.css"> 
+		<link rel="stylesheet" type="text/css" href="css/style_map.css">
+		<link rel="stylesheet" href="css/style_sidebar.css" type="text/css">
+		<link rel="stylesheet" href="css/style_room.css" type="text/css">
+
+		<!-- Fontawesome -->
+		<script src="https://kit.fontawesome.com/e55a1c2b7c.js" crossorigin="anonymous"></script>
 
 		<!-- font google -->
 		<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -22,6 +27,7 @@
 	<body>
     
 		<div class="d-flex" id="wrapper">
+			
 			<!-- Sidebar -->
 			<div class="border-right" id="sidebar-wrapper">
 				<div class="sidebar-heading">
@@ -30,157 +36,126 @@
 				<div class="list-group list-group-flush">
 					<div class="sidebar">
 						<div class="row">
-							<div class="col-9 sidebar-item id">
-								<a href="#" class="sidebar-link pl-1 pr-1">Map</a>
+							<div class="col-9 sidebar-item id-sidebar">
+								<i class="fas fa-map-marker-alt fa-md text-light"></i>
+								<a href="#" class="sidebar-link pl-3 pr-1">Map</a>
 							</div>
 							<div class="col-9 sidebar-item">
-								<a href="#" class="sidebar-link pl-1 pr-1">Schedule</a>
+								<i class="fas fa-clipboard-list fa-md text-light"></i>
+								<a href="jadwal.html" class="sidebar-link pl-3 pr-1">Schedule</a>
 							</div>
 							<div class="col-9 sidebar-item">
-								<a href="#" class="sidebar-link pl-1 pr-1">Siswa</a>
+								<i class="fas fa-users fa-md text-light" style="margin-left: -4px;"></i>
+								<a href="siswa.html" class="sidebar-link pl-3 pr-1" style="margin-left: -4px;">Siswa</a>
 							</div>
 							<div class="col-9 sidebar-item">
-								<a href="#" class="sidebar-link pl-1 pr-1">Guru</a>
+								<i class="fas fa-user-tie fa-md text-light" style="margin-left: -1px;"></i>
+								<a href="guru.html" class="sidebar-link pl-3 pr-1" style="margin-left: -1px;">Guru</a>
 							</div>
-							<div class="col-9 sidebar-item">
-								<a href="#" class="sidebar-link pl-1 pr-1">Logout</a>
+							<div class="col-9 sidebar-item mt-4 logout">
+								<i class="fas fa-sign-out-alt fa-md text-light" style="margin-left: -1px;"></i>
+								<a href="#" class="sidebar-link pl-3 pr-1" style="margin-left: -1px;">Logout</a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<!-- /#sidebar-wrapper -->
+			<!-- Sidebar End -->
 	
 			<!-- Content -->
 			<div id="page-content-wrapper">
-				<div class="row content-header">
-					<div class="col-1">
-						<button class="btn btn-primary btn-sm" id="menu-toggle">-</button>
-					</div>
-					<div class="col-10">
-						<p class="header">Maps SMKN 4 Bandung</p>
-					</div>
-				</div>
-				<div class="content-main">
-					<div class="map">
 
-						<!-- Barisan gedung E -->
-						<div class="map-row">
-							<div class="map-item-kantin">
-								<div class="btn btn-dark">kantin</div>
-							</div>	
-							<div class="map-item">
-								<div class="btn btn-dark">E11</div>
-							</div>	
-							<div class="map-item">
-								<div class="btn btn-dark">E12</div>
+				<div class="contain">
+					<div class="content p-3">
+						<div class="row">
+							<div class="col-1">
+								<button class="btn btn-light btn-sm mt-1 btn-toogle" id="menu-toggle"><i class="fas fa-bars fa-lg"></i></button>
 							</div>
-							<div class="map-item">
-								<div class="btn btn-dark">E13</div>
-							</div>
-							<div class="map-item">
-								<div class="btn btn-dark">E14</div>
-							</div>
-
-							<div class="map-item-kopsis">
-								<div class="btn btn-dark">kop</div>
-							</div>
-
-							<div class="map-item" style="margin-left: 26px;">
-								<div class="btn btn-dark">D26</div>
+							<div class="col header">
+								<h1>Maps SMKN 4 Bandung</h1>
 							</div>
 						</div>
-						
-						<!-- barisan gedung F -->
-						<div class="map-row-ver d-flex">
-							<div class="map-col">
-								<div class="map-item">
-									<div class="btn btn-warning">F14</div>
-								</div>
-								<div class="map-item">
-									<div class="btn btn-dark">F13</div>
-								</div>
-								<div class="map-item">
-									<div class="btn btn-dark">F12</div>
-								</div>
-								<div class="map-item">
-									<div class="btn btn-dark">F11</div>
-								</div>
-							</div>
+						<div class="row content-map">
+							<div class="col map">
 
-							<!-- lapang -->
-							<div class="map-col">
-								<div class="map-row-ver">
-									<div class="map-item-lapang">
-										<div class="btn btn-dark">A21</div>
-									</div>
+								<!-- Ruang G -->
+								<div class="room r-g d-flex">
+									<a href="#" class="btn-room"><i class="fas fa-chalkboard-teacher fa-lg"></i><br>G 1.1</a>
+									<a href="#" class="btn-room"><i class="fas fa-chalkboard-teacher fa-lg"></i><br>G 1.2</a>
+									<a href="#" class="btn-room"><i class="fas fa-chalkboard-teacher fa-lg"></i><br>G 1.3</a>
+									<a href="#" class="btn-room"><i class="fas fa-chalkboard-teacher fa-lg"></i><br>G 1.4</a>
+									<a href="#" class="btn-room"><i class="fas fa-chalkboard-teacher fa-lg"></i><br>G 1.5</a>
 								</div>
-							</div>
 
-							<div class="map-col" style="margin-left: 40px;">
-								<div class="map-item">
-									<div class="btn btn-warning">F14</div>
+								<!-- Ruang E -->
+								<div class="room r-e d-flex">
+									<a href="#" class="btn-room"  data-toggle="modal" data-target="#staticBackdrop"><i class="fas fa-chalkboard-teacher fa-lg" ></i><br>E 1.1</a>
+									<a href="#" class="btn-room"  data-toggle="modal" data-target="#staticBackdrop"><i class="fas fa-chalkboard-teacher fa-lg"></i><br>E 1.2</a>
+									<a href="#" class="btn-room"  data-toggle="modal" data-target="#staticBackdrop"><i class="fas fa-chalkboard-teacher fa-lg"></i><br>E 1.3</a>
+									<a href="#" class="btn-room"  data-toggle="modal" data-target="#staticBackdrop"><i class="fas fa-chalkboard-teacher fa-lg"></i><br>E 1.4</a>
 								</div>
-								<div class="map-item">
-									<div class="btn btn-dark">F13</div>
-								</div>
-								<div class="map-item">
-									<div class="btn btn-dark">F12</div>
-								</div>
-								<div class="map-item">
-									<div class="btn btn-dark">F11</div>
-								</div>
-							</div>
 
-							<div class="map-col" style="margin-left: 40px;">
-								<div class="map-item">
-									<div class="btn btn-warning">F14</div>
+								<!-- Ruang F -->
+								<div class="room r-f">
+									<a href="#" class="btn btn-kantin"><i class="fas fa-utensils fa-lg"></i><br>Kantin</a>
+									<a href="#" class="btn btn-room"><i class="fas fa-chalkboard-teacher fa-lg"></i><br>F 1.5</a>
+									<a href="#" class="btn btn-room"><i class="fas fa-chalkboard-teacher fa-lg"></i><br>F 1.4</a>
+									<!-- <a href="#" class="btn-wc">WC</a> -->
+									<a href="#" class="btn btn-room"><i class="fas fa-chalkboard-teacher fa-lg"></i><br>F 1.3</a>
+									<a href="#" class="btn btn-room"><i class="fas fa-chalkboard-teacher fa-lg"></i><br>F 1.2</a>
+									<a href="#" class="btn btn-room"><i class="fas fa-chalkboard-teacher fa-lg"></i><br>F 1.1</a>
 								</div>
-								<div class="map-item">
-									<div class="btn btn-dark">F13</div>
-								</div>
-								<div class="map-item">
-									<div class="btn btn-dark">F12</div>
-								</div>
-								<div class="map-item">
-									<div class="btn btn-dark">F11</div>
-								</div>
-							</div>
 
-						</div>
-						<div class="map-row">
-							<div class="map-item-mosque">
-								<div class="btn btn-dark">F11</div>
-							</div>	
-							<div class="map-item"  style="margin-top: 20px; margin-left: 5px;">
-								<div class="btn btn-dark">F11</div>
-							</div>	
-							<div class="map-item" style="margin-top: 20px;">
-								<div class="btn btn-dark">F12</div>
-							</div>
-							<div class="map-item" style="margin-top: 20px;">
-								<div class="btn btn-dark">F13</div>
-							</div>
-							<div class="map-item" style="margin-top: 20px;">
-								<div class="btn btn-dark">F14</div>
-							</div>
-							<div class="map-item" style="margin-top: 20px;">
-								<div class="btn btn-dark">F14</div>
-							</div>
-						</div>
+								<!-- Ruang D -->
+								<div class="room r-d">
+									<a href="#" class="btn btn-room"><i class="fas fa-chalkboard-teacher fa-lg"></i><br> D1.5</a>
+									<a href="#" class="btn btn-room"><i class="fas fa-chalkboard-teacher fa-lg"></i><br> D1.4</a>
+									<a href="#" class="btn btn-room"><i class="fas fa-chalkboard-teacher fa-lg"></i><br> D1.3</a>
+									<a href="#" class="btn btn-room"><i class="fas fa-chalkboard-teacher fa-lg"></i><br> D1.2</a>
+									<a href="#" class="btn btn-room"><i class="fas fa-chalkboard-teacher fa-lg"></i><br> D1.1</a>
+								</div>
 
-						<div class="map-row">
-							<div class="map-item">
-								<div class="btn btn-dark">E11</div>
+								<!-- Ruang H -->
+								<div class="room r-h">
+									<a href="#" class="btn btn-room"><i class="fas fa-chalkboard-teacher fa-lg"></i><br> H1.5</a>
+									<a href="#" class="btn btn-room"><i class="fas fa-chalkboard-teacher fa-lg"></i><br> H1.4</a>
+									<a href="#" class="btn btn-room"><i class="fas fa-chalkboard-teacher fa-lg"></i><br> H1.3</a>
+									<a href="#" class="btn btn-room"><i class="fas fa-chalkboard-teacher fa-lg"></i><br> H1.2</a>
+									<a href="#" class="btn btn-room"><i class="fas fa-chalkboard-teacher fa-lg"></i><br> H1.1</a>
+								</div>
+								<div class="room eskul d-flex">
+									<a href="#" class="btn-eskul">Pramuka</a>
+									<a href="#" class="btn-eskul">PMR</a>
+								</div>
+								<div class="lapang">
+									<a href="#" class="btn btn-room">Lapangan <br> Olahraga</a>
+								</div>
+								<img src="assets/images/maps.PNG" class="img-maps" alt="maps">
 							</div>
 						</div>
 					</div>
-				</div>
-				
-				
-	
 			</div>
 			<!-- Content End -->
+		</div>
+
+		<!-- Modal Data Map -->
+		<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body" id="data-map">
+						
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
 		</div>
 
 
@@ -218,6 +193,7 @@
 				snapshot.forEach(function(childsnapshot){
 					var x = childsnapshot.val();
 					content += "<ul>";
+					content += "<li> Ruangan:   " + x.ruangan + "</li>";
 					content += "<li> Ruangan:   " + x.ruangan + "</li>";
 					content += "<li> Kelas: " + x.kelas + "</li>";
 					content += "<li> Matpel: " + x.matapelajaran + "</li>";

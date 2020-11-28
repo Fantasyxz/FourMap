@@ -1,0 +1,96 @@
+* {
+    font-family: 'montserrat', sans-serif;
+}
+
+/* Sidebar CSS */
+#wrapper {
+    overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+    width: 15rem;
+}
+
+#page-content-wrapper {
+    min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: 0px;
+}
+
+.img-profile {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #3f4294;
+    border-radius: 100%;
+}
+
+.border-right {
+    background-color: #7B7FF6;
+}
+
+.list-group-item {
+    background-color: #7b7ff6;
+}
+
+.sidebar-item {
+    border-radius: 10px;
+    margin-left: 32px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.id-sidebar {
+    background-color: #7BD5F5;
+}
+
+.sidebar-heading {
+    margin-bottom: 30px;
+}
+
+.sidebar-item .sidebar-link {
+    text-decoration: none;
+    color: #f0f0f0;
+}
+
+.sidebar-item:hover {
+    background-color: #7BD5F5;
+}
+
+.logout:hover {
+    background-color: salmon;
+}
+
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: -15rem;
+    }
+}
