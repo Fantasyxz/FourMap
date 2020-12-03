@@ -8,8 +8,11 @@ import android.view.View;
 import android.widget.Button;
 import android.content.Intent;
 
-public class ProfileActivity {
+public class ProfileActivity extends AppCompatActivity {
 
-
-
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activty_profile);
+    }
 }

@@ -23,7 +23,7 @@ public class HomeFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_home, container, false);
 
         WebView myWebView = (WebView) root.findViewById(R.id.webview);
-        myWebView.loadUrl("https://developer.android.com/guide/webapps/webview");
+        myWebView.loadUrl("https://smartschool-7d50c.web.app");
         myWebView.setWebViewClient(new WebViewClient());
 
         return root;
