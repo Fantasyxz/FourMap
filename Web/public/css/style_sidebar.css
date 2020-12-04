@@ -71,14 +71,6 @@
     color: #f0f0f0;
 }
 
-.sidebar-item:hover {
-    background-color: #7BD5F5;
-}
-
-.logout:hover {
-    background-color: salmon;
-}
-
 
 @media (min-width: 768px) {
     #sidebar-wrapper {

@@ -1,0 +1,140 @@
+/* Gedung G */
+.content .room {
+  position: absolute;
+  top: 15px;
+  left: 124px;
+}
+
+.room .btn-room {
+  width: 119px;
+  text-decoration: none;
+  height: 120px;
+  text-align: center;
+  margin-right: 2px;
+  background-color: #7b7ff6;
+  color: #f0f0f0;
+  font-weight: 600;
+  padding: 35px;
+  border-radius: 0;
+}
+
+.room .btn-room:hover {
+  background-color: #6367c7;
+}
+
+/* Gedung F */
+.content .r-f {
+  position: absolute;
+  left: 34px;
+  top: 160px;
+  width: 1px;
+}
+
+.r-f .btn-room {
+  margin-bottom: 2px;
+}
+
+.btn-kantin {
+  width: 119px;
+  text-decoration: none;
+  height: 104px;
+  text-align: center;
+  margin-right: 2px;
+  background-color: #f39200;
+  color: #fff;
+  font-weight: 600;
+  padding: 25px;
+  border-radius: 0;
+  margin-bottom: 2px;
+}
+
+.btn-kantin:hover {
+  background-color: #ff5e00;
+  color: #f0f0f0;
+}
+
+
+.r-f .btn-wc {
+  background-color: #3645c7;
+  border-radius: 0;
+  padding: 20px 43px;
+  margin-bottom: 2px;
+  color: #f0f0f0;
+}
+
+/* Gedung E */
+.content .r-e {
+  position: absolute;
+  top: 248px;
+  left: 215px;
+}
+
+/* Gedung D */
+.content .r-d {
+  position: absolute;
+  left: 770px;
+  top: 155px;
+  width: 1px;
+}
+
+.content .r-d .btn-room {
+  margin-bottom: 2px;
+}
+
+/* Gedung D */
+.content .r-h {
+  position: absolute;
+  left: 968px;
+  top: 155px;
+  width: 1px;
+}
+
+.r-h .btn-room {
+  margin-bottom: 2px;
+}
+
+/* Ruang Eskul */
+.eskul .btn-eskul {
+  background-color: #c73636;
+  border-radius: 0;
+  width: 125px;
+  height: 85px;
+  margin-left: 2px;
+  color: #f0f0f0;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.btn-eskul:hover {
+  background-color: #ac2b2b;
+}
+
+.content .eskul {
+  position: absolute;
+  left: 775px;
+  top: 5px;
+}
+
+
+/* Lapang CSS */
+.content .lapang {
+  position: absolute;
+  top: 430px;
+  left: 215px;
+}
+
+.lapang .btn-room:hover {
+  background-color: #2aa1dd;
+}
+
+
+.lapang .btn-room {
+  background-color: #35b3f1;
+  border-radius: 0;
+  text-decoration: none;
+  color: white;
+  width: 480px;
+  height: 440px;
+  padding-top: 200px;
+}

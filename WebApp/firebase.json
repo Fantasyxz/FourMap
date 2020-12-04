@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "site": "smartschool-7d50c",
+    "site": "maps-d2cf8",
     "public": "public",
     "ignore": [
       "firebase.json",
@@ -10,7 +10,7 @@
     "rewrites": [
       {
         "source": "**",
-        "destination": "/login.html"
+        "destination": "/map.html"
       }
     ]
   }
