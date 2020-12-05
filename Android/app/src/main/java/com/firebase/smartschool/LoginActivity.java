@@ -86,7 +86,7 @@ public class LoginActivity extends AppCompatActivity {
 
         adminBaru(user.getUid(), username, user.getEmail());
 
-        startActivity(new Intent(LoginActivity.this, MainActivity.class));
+        startActivity(new Intent(LoginActivity.this, NavActivity.class));
         finish();
 
     }
