@@ -3,13 +3,16 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>FourMap - Home</title>
+		<title>FourMap - Jadwal</title>
+
+		<link rel="shortcut icon" href="assets/images/logo_col.png" type="image/png">
 		
 		<!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> 
 		
 		<!-- CSS -->
-		<link rel="stylesheet" type="text/css" href="css/style_test.css"> 
+		<link rel="stylesheet" type="text/css" href="css/style_sidebar.css"> 
+		<link rel="stylesheet" type="text/css" href="css/style_jadwal.css"> 
 
 		<!-- Fontawesome -->
 		<script src="https://kit.fontawesome.com/e55a1c2b7c.js" crossorigin="anonymous"></script>
@@ -40,7 +43,7 @@
 							</div>
 							<div class="col-9 sidebar-item id-sidebar">
 								<i class="fas fa-clipboard-list fa-md text-light"></i>
-								<a href="schedule.html" class="sidebar-link pl-3 pr-1">Schedule</a>
+								<a href="#" class="sidebar-link pl-3 pr-1">Schedule</a>
 							</div>
 							<div class="col-9 sidebar-item">
 								<i class="fas fa-users fa-md text-light" style="margin-left: -4px;"></i>
@@ -52,7 +55,7 @@
 							</div>
 							<div class="col-9 sidebar-item mt-4 logout">
 								<i class="fas fa-sign-out-alt fa-md text-light" style="margin-left: -1px;"></i>
-								<a href="#" class="sidebar-link pl-3 pr-1" style="margin-left: -1px;">Logout</a>
+								<a href="#" data-toggle="modal" data-target="#logoutModal" class="sidebar-link pl-3 pr-1" style="margin-left: -1px;">Logout</a>
 							</div>
 						</div>
 					</div>
@@ -63,11 +66,264 @@
 			<!-- Content -->
 			<div id="page-content-wrapper">
 
+				<div class="content">
+
+					<div class="row">
+						<div class="col">
+							<div class="top-header d-flex">
+								<div class="toogle">
+									<button class="btn btn-light btn-sm btn-toogle" id="menu-toggle">
+										<i class="fas fa-bars fa-lg"></i>
+									</button>
+								</div>
+								<div class="search-box d-flex ml-2">
+									<div class="search">
+										<input type="text" id="search" name="search" class="inputSearch mt-1" placeholder="Search..">
+									</div>
+									<div class="search-btn">
+										<a class="btn btn-dark btn-sm btn-search">
+											<i class="fas fa-search fa-lg mt-2"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					
+					
+					<div class="row">
+						<div class="col">
+							<div class="header d-flex">
+								<div class="header-txt">
+									<h1>Jadwal Kelas XII RPL 1</h1>
+								</div>
+								<div class="header-btn">
+									<a class="btn btn-sm btn-add" href="#" data-toggle="modal" data-target="#modalInput">
+										<i class="fas fa-plus fa-lg mt-2 mr-2 text-light"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="content-data">
+						<div class="inner">
+							<div class="row">
+								<div class="col">
+									<div class="table-head d-flex">
+										<table class="table table-borderless">
+											<thead>
+												<tr>
+													<th>Senin</th>
+												</tr>
+											</thead>
+											<tbody class="data-jadwal" id="data-jadwal">
+												
+											</tbody>
+										</table>
+										<table class="table table-borderless">
+											<thead>
+												<tr>
+													<th>Selasa</th>
+												</tr>
+											</thead>
+											<tbody class="data-jadwal" id="data-jadwal">
+												<tr>
+													<td>PPL</td>
+												</tr>
+												<tr>
+													<td>Bahasa Inggris</td>
+												</tr>
+												<tr>
+													<td>Matematika</td>
+												</tr>
+											</tbody>
+										</table>
+										<table class="table table-borderless">
+											<thead>
+												<tr>
+													<th>Rabu</th>
+												</tr>
+											</thead>
+											<tbody class="data-jadwal" id="data-jadwal">
+												<tr>
+													<td>Bahasa Sunda</td>
+												</tr>
+												<tr>
+													<td>PKN</td>
+												</tr>
+												<tr>
+													<td>Basis Data</td>
+												</tr>
+											</tbody>
+										</table>
+										<table class="table table-borderless">
+											<thead>
+												<tr>
+													<th>Kamis</th>
+												</tr>
+											</thead>
+											<tbody class="data-jadwal" id="data-jadwal">
+												<tr>
+													<td>PJOK</td>
+												</tr>
+												<tr>
+													<td>BK</td>
+												</tr>
+												<tr>
+													<td>PWPB</td>
+												</tr>
+											</tbody>
+										</table>
+										<table class="table table-borderless">
+											<thead>
+												<tr>
+													<th>Jumat</th>
+												</tr>
+											</thead>
+											<tbody class="data-jadwal" id="data-jadwal">
+												<tr>
+													<td>PAI</td>
+												</tr>
+												<tr>
+													<td>PBO</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-11">
+							<div class="header">
+								<h1 class="header-txt">Jadwal Kelas XII RPL 2</h1>
+							</div>
+						</div>
+						<div class="col-1">
+							<div class="header bg-warning">
+								<a class="btn btn-sm" href="#" data-toggle="modal" data-target="#modalInput">
+									<i class="fas fa-plus fa-lg mt-2 text-light"></i>
+								</a>
+							</div>
+						</div>
+					</div>  
+
+					<div class="content-data">
+						<div class="inner">
+							<div class="row">
+								<div class="col">
+									<div class="table-head d-flex">
+										<table class="table table-borderless">
+											<thead>
+												<tr>
+													<th>Senin</th>
+												</tr>
+											</thead>
+											<tbody class="data-jadwal" id="data-jadwal">
+												<tr>
+													<td>PBO</td>
+												</tr>
+												<tr>
+													<td>BK</td>
+												</tr>
+												<tr>
+													<td>Bahasa Indonesia</td>
+												</tr>
+											</tbody>
+										</table>
+										<table class="table table-borderless">
+											<thead>
+												<tr>
+													<th>Selasa</th>
+												</tr>
+											</thead>
+											<tbody class="data-jadwal" id="data-jadwal">
+												<tr>
+													<td>Bahasa Inggris</td>
+												</tr>
+												<tr>
+													<td>Basis Data</td>
+												</tr>
+												<tr>
+													<td>PJOK</td>
+												</tr>
+											</tbody>
+										</table>
+										<table class="table table-borderless">
+											<thead>
+												<tr>
+													<th>Rabu</th>
+												</tr>
+											</thead>
+											<tbody class="data-jadwal" id="data-jadwal">
+												<tr>
+													<td>PAI</td>
+												</tr>
+												<tr>
+													<td>Bahasa Inggris</td>
+												</tr>
+												<tr>
+													<td>Matematika</td>
+												</tr>
+											</tbody>
+										</table>
+										<table class="table table-borderless">
+											<thead>
+												<tr>
+													<th>Kamis</th>
+												</tr>
+											</thead>
+											<tbody class="data-jadwal" id="data-jadwal">
+												
+											</tbody>
+										</table>
+										<table class="table table-borderless">
+											<thead>
+												<tr>
+													<th>Jumat</th>
+												</tr>
+											</thead>
+											<tbody class="data-jadwal" id="data-jadwal">
+												
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
 				
 			</div>
 			<!-- Content End -->
+				
 		</div>
 
+		<!-- Log out Modal -->
+		<div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Log out</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						Apakah anda yakin akan logout ?
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
+						<button type="button" class="btn btn-outline-danger" id="btn-logout">Log Out</button>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<!-- Firebase SDK Js -->
 		<script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
@@ -93,23 +349,19 @@
 			var database = firebase.database();
 			
 			// inisialize variable
-			var id = ["1","2"];
-			var ruangRef = firebase.database().ref('ruang/' + id[1]);
+			var siswaRef = firebase.database().ref().child('schedule');
 			
-			ruangRef.on("value", function(snapshot){
-				$("#data-map").empty();
+			// Read Data Function
+			siswaRef.on("value", function(snapshot){
+				$("#data-jadwal").empty();
 				var content = "";
 
 				snapshot.forEach(function(childsnapshot){
 					var x = childsnapshot.val();
-					content += "<ul>";
-					content += "<li> Ruangan:   " + x.ruangan + "</li>";
-					content += "<li> Kelas: " + x.kelas + "</li>";
-					content += "<li> Matpel: " + x.matapelajaran + "</li>";
-					content += "<li> Status: " + x.status + "</li>";
-					content += "<ul>";
+					content += "<tr><td>" + x.matpel1  + "</td></tr>";
+					content += "<tr><td>" + x.matpel2  + "</td></tr>";
 				});
-				$("#data-map").html(content);
+				$("#data-jadwal").html(content);
 			});
 
 			// Sidebar Function
@@ -118,5 +370,6 @@
 				$("#wrapper").toggleClass("toggled");
 			});
 		</script>
+		<script src="js/jadwal.js" type="text/javascript" rel="javascript"></script>
 	</body>
 </html>

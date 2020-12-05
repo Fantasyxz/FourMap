@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>FourMap - Siswa</title>
+		<link rel="shortcut icon" href="assets/images/logo_col.png" type="image/png">
 		
 		<!-- Bootstrap -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> 
@@ -53,7 +54,7 @@
 							</div>
 							<div class="col-9 sidebar-item mt-4 logout">
 								<i class="fas fa-sign-out-alt fa-md text-light" style="margin-left: -1px;"></i>
-								<a href="#" class="sidebar-link pl-3 pr-1" style="margin-left: -1px;">Logout</a>
+								<a href="#" data-toggle="modal" data-target="#logoutModal" class="sidebar-link pl-3 pr-1" style="margin-left: -1px;">Logout</a>
 							</div>
 						</div>
 					</div>
@@ -67,25 +68,38 @@
 				<div class="content">
 
 					<div class="row">
-						<div class="col-1">
-							<button class="btn btn-light btn-sm btn-toogle" id="menu-toggle">
-								<i class="fas fa-bars fa-lg"></i>
-							</button>
-						</div>
-						<div class="col-11">
-							<div class="search">
-								<input type="text" id="search" name="search" class="inputSearch" placeholder="Search data siswa here..">
-								<a class="btn btn-dark btn-sm btn-search">
-									<i class="fas fa-search fa-lg"></i>
-								</a>
+						<div class="col">
+							<div class="top-header d-flex">
+								<div class="toogle">
+									<button class="btn btn-light btn-sm btn-toogle" id="menu-toggle">
+										<i class="fas fa-bars fa-lg"></i>
+									</button>
+								</div>
+								<div class="search-box d-flex ml-2">
+									<div class="search">
+										<input type="text" id="search" name="search" class="inputSearch mt-1" placeholder="Search..">
+									</div>
+									<div class="search-btn">
+										<a class="btn btn-dark btn-sm btn-search">
+											<i class="fas fa-search fa-lg mt-2"></i>
+										</a>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 
 					<div class="row">
 						<div class="col">
-							<div class="header">
-								<h1 class="header-txt">Data Siswa SMKN 4 Bandung</h1>
+							<div class="header d-flex">
+								<div class="header-txt">
+									<h1>Data Siswa SMKN 4 Bandung</h1>
+								</div>
+								<div class="header-btn">
+									<a class="btn btn-sm btn-add" href="#" data-toggle="modal" data-target="#modalInput">
+										<i class="fas fa-plus fa-lg mt-2 mr-2 text-light"></i>
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>  
@@ -105,11 +119,13 @@
 													<th>Kelas</th>
 													<th>Jurusan</th>
 													<th>TTL</th>
+													<th>Aksi</th>
 												</tr>
 											</thead>
 											<tbody class="data-siswa" id="data-siswa">
 												
 											</tbody>
+
 										</table>
 									</div>
 								</div>
@@ -121,6 +137,85 @@
 				
 			</div>
 			<!-- Content End -->
+		</div>
+
+		<!-- Modal Input Data Map -->
+		<div class="modal fade" id="modalInput" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="staticBackdropLabel">Input data siswa</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-row mb-3">
+								<div class="col">
+									<label for="inputNIS">NIS</label>
+									<input type="text" class="form-control" id="inputNIS">
+								</div>
+								<div class="col">
+									<label for="inputNama">Nama lengkap</label>
+									<input type="text" class="form-control"  id="inputNama">
+								</div>
+							</div>
+							<div class="form-row mb-3">
+								<div class="col">
+									<label for="inputEmail">Email</label>
+									<input type="text" class="form-control" id="inputEmail">
+								</div>
+								<div class="col">
+									<label for="inputGender">Gender</label>
+									<input type="text" class="form-control"  id="inputGender">
+								</div>
+							</div>
+							<div class="form-row mb-3">
+								<div class="col">
+									<label for="inputKelas">Kelas</label>
+									<input type="text" class="form-control" id="inputKelas">
+								</div>
+								<div class="col">
+									<label for="inputTTL">TTL</label>
+									<input type="text" class="form-control"  id="inputTTL">
+								</div>
+							</div>
+							<div class="form-row mb-3">
+								<div class="col">
+									<label for="inputJurusan">Jurusan</label>
+									<input type="text" class="form-control" id="inputJurusan">
+								</div>
+							</div>
+							<button class="btn btn-primary" id="btnAdd" style="width: 100%;">Add</button>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Log out Modal -->
+		<div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Log out</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						Apakah anda yakin akan logout ?
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Cancel</button>
+						<button type="button" class="btn btn-outline-danger" id="btn-logout">Log Out</button>
+					</div>
+				</div>
+			</div>
 		</div>
 
 
@@ -165,10 +260,38 @@
 					content +=	"<td>" + x.kelas + "</th>";
 					content +=	"<td>" + x.jurusan + "</td>";
 					content +=	"<td>" + x.ttl + "</td>";
+					content +=	"<td class='d-flex'>"
+					content += 	"<a href='#' class='btn btn-delete btn-danger btn-sm mr-1' id='btn-delete'><i class='fas fa-trash fa-sm text-light'></i></a>";
+					content +=  "<a href='#' class='btn btn-edit btn-warning btn-sm' id='btn-edit'><i class='fas fa-edit fa-sm text-light'></i></a>";
+					content += 	"</td>"
 					content += "</tr>";
 				});
 				$("#data-siswa").html(content);
 			});
+
+			// Initialize variable
+      var valNIS = document.getElementById('inputNIS');
+      var valNama = document.getElementById('inputNama');
+      var valEmail = document.getElementById('inputEmail');
+      var valKelas = document.getElementById('inputKelas');
+      var valGender = document.getElementById('inputGender');
+      var valTTL = document.getElementById('inputTTL');
+      var valJurusan = document.getElementById('inputJurusan');
+      var btnAdd = document.getElementById('btnAdd');
+
+      // Add Database function
+      btnAdd.addEventListener('click', (e) => {
+        e.preventDefault();
+        database.ref('siswa/' + valNIS.value).set({
+          email: valEmail.value,
+          gender: valGender.value,
+          jurusan: valJurusan.value,
+					kelas: valKelas.value,
+					nis: valNIS.value,
+					ttl: valTTL.value,
+					nama: valNama.value
+        });
+      });
 
 			// Sidebar Function
 			$("#menu-toggle").click(function(e) {
@@ -176,5 +299,6 @@
 				$("#wrapper").toggleClass("toggled");
 			});
 		</script>
+		<script src="js/siswa.js" type="text/javascript" rel="javascript"></script>
 	</body>
 </html>

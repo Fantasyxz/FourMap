@@ -1,0 +1,43 @@
+.container {
+  margin-top: 70px;
+}
+
+.container .row {
+  min-height: 420px;
+}
+
+.img-login img{
+  width: 450px;
+}
+
+.img-login {
+  /* background-color: #7B7FF6; */
+}
+
+.input-login {
+  padding: 50px;
+}
+
+.input-login .btn-login {
+  width: 100%;
+}
+
+.input-login .forgot-pw {
+  margin-left: auto;
+  text-decoration: none;
+  color: #341877;
+}
+
+@media (max-width: 768px) {
+  .img-login img {
+    width: 300px;
+  }
+
+  .input-login h2 {
+    text-align: center;
+  }
+
+  .input-login {
+    padding: 20px;
+  }  
+}
