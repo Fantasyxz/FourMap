@@ -65,8 +65,7 @@ body {
 
 .content .inner {
     max-height: 85vh;
-    overflow-y: auto;
-    overflow-x: hidden;
+    overflow: auto;
 }
 /* Table CSS */
 

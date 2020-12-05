@@ -4,38 +4,44 @@ body {
 
 /* Content CSS */
 .content {
-    padding: 0 20px;
+    margin: 0 20px;
     margin-top: 20px;
 }
 
-.content .search {
-    background-color: #fff;
-    border-radius: 7px;
+.search-box {
+    width: 100%;
+    border-radius: 10px;
     height: 40px;
+    background-color: #fff;
 }
 
-.content .inputSearch {
-    background-color: transparent;
+.search {
+    width: 100%;
+}
+
+.top-header .inputSearch {
+    width: 100%;
     border: none;
-    width: 94%;
-    padding: 10px 20px;
+    padding: 5px 10px;
+    background-color: transparent;
+}
+
+.search-btn .btn-search {
+    border-radius: 100%;
+    margin: 2px 10px;
 }
 
 .content .inputSearch:focus {
     outline: none;
-}
 
-.content .btn-search {
-    margin-bottom: 6px;
-    margin-left: auto;
 }
 
 .content .header {
     background-color: #7B7FF6;
     height: 40px;
-    margin: 10px 0;
     text-align: center;
-    border-radius: 7px;
+    border-radius: 10px;
+    margin: 15px 0;
 }
 
 .content .header h1 {
@@ -43,6 +49,11 @@ body {
     font-size: 18px;
     padding-top: 10px;
     color: #fff;
+}
+
+.header .header-txt {
+    width: 100%;
+    text-align: center;
 }
 
 .content .content-data {
